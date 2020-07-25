@@ -31,18 +31,10 @@ function viewCart() {
       say = `${say}, ${cart[i].itemName} at $${cart[i].itemPrice}`
       }
       return `${say}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
-
-
-
-
-
-
 }
 
 function total() {
   // write your code here
-  var sum = cart.itemPrice
-  var hex = 0
   for (var i=0; i<cart; i++){
     hex = hex + cart[i].itemPrice;
     return hex
