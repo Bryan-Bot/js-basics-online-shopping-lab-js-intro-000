@@ -27,12 +27,17 @@ function viewCart() {
     if(cart.length === 1){
       return `${say}.`
     }
-    if (cart.length >= 2)
-     for(let i = 1; i < cart.length ;i++){
-      say += `, ${cart[i].itemName} at $${cart[i].itemPrice}.`
+     for(let i = 1; i < cart.length - 1;i++){
+      say = `${say}, ${cart[i].itemName} at $${cart[i].itemPrice}`
       }
+      return `${say}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`
 
 
+
+
+
+
+}
 
 function total() {
   // write your code here
