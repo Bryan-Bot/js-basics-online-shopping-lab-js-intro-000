@@ -48,8 +48,6 @@ function removeFromCart(item) {
     //loop exist to loop over array
     if (cart[i].itemName === item){
     //compares the values of the items that being searched for
-
-      //(cart.findIndex(result))       finds the index the item that being searched for
       return cart.splice(i,1)
       //search id the index while deleting 1
     }
@@ -60,4 +58,10 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  if (cardNumber = undefined){
+      return `Sorry, we don't have a credit card on file for you.`
+  }else{
+  cart.splice(0,cart.length)
+  return `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
+  }
 }
