@@ -52,7 +52,12 @@ function removeFromCart(item) {
       result = cart[i]
     }
     if(result){
-      result = result.findIndex()
+      search = cart.findIndex(result)
+      //(cart.findIndex(result))       finds the index the item that being searched for
+      return cart.splice(search,1)
+      //search id the index while deleting 1
+    }else {
+      return 'That item is not in your cart.'
     }
   }
 }
