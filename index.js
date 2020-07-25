@@ -44,8 +44,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var result
-  for(i=0; i < cart.length; i++){
+  for(let i=0; i < cart.length; i++){
     //loop exist to loop over array
     if (cart[i].itemName === item){
     //compares the values of the items that being searched for
