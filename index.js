@@ -23,18 +23,15 @@ function viewCart() {
     if (cart.length ===0){
       return "Your shopping cart is empty."
     }
-    var say = `In your cart, you have`
+    var say = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
     if(cart.length === 1){
-      var say += ` ${cart[0].itemName} at $${cart[0].itemPrice}.`
-    }
-    if (cart.length >= 2){
-     var stone = ` `
-     for(let i = 1; i < cart.length - 1;i++){
-      // for loops iterates over arrays length
-        var stone = `${say},  and ${cart[i].itemName} at $${cart[i].itemPrice}.`
-    }
-    var say += `${stone}`
-  }
+      return `${say}.`
+    } 
+    if (cart.length >= 2)
+     for(let i = 1; i < cart.length ;i++){
+      say += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
+      }
+
 
 
 function total() {
