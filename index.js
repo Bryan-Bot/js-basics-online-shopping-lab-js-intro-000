@@ -55,9 +55,9 @@ function removeFromCart(item) {
       //search id the index while deleting 1
     }
   }
-  else {
+
     return 'That item is not in your cart.'
-  }
+
 }
 
 function placeOrder(cardNumber) {
