@@ -26,7 +26,7 @@ function viewCart() {
     var say = `In your cart, you have` ${cart[0].itemName} at $${cart[0].itemPrice}
     if(cart.length === 1){
       var say = ${cart[0].itemName} at $${cart[0].itemPrice}
-    } 
+    }
     if (cart.length >= 2)
      for(let i = 1; i < cart.length ;i++){
         // for loops iterates over arrays length
