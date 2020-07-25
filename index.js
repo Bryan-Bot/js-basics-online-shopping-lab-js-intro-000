@@ -45,20 +45,18 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var result
-  for(i=0, i < cart.length, i++){
+  for(i=0; i < cart.length; i++){
     //loop exist to loop over array
     if (cart[i].itemName === item){
     //compares the values of the items that being searched for
-      result = cart[i]
-    }
-    if(result){
-      search = cart.findIndex(result)
+
       //(cart.findIndex(result))       finds the index the item that being searched for
-      return cart.splice(search,1)
+      return cart.splice(i,1)
       //search id the index while deleting 1
-    }else {
-      return 'That item is not in your cart.'
     }
+  }
+  else {
+    return 'That item is not in your cart.'
   }
 }
 
