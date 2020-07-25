@@ -44,7 +44,17 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-
+  var result
+  for(i=0, i < cart.length, i++){
+    //loop exist to loop over array
+    if (cart[i].itemName === item){
+    //compares the values of the items that being searched for
+      result = cart[i]
+    }
+    if(result){
+      result = result.findIndex()
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
