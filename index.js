@@ -29,7 +29,7 @@ function viewCart() {
     }
     if (cart.length >= 2)
      for(let i = 1; i < cart.length ;i++){
-      say += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
+      say += `, ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }
 
 
