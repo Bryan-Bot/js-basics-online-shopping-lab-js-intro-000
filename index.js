@@ -55,7 +55,6 @@ function removeFromCart(item) {
       //search id the index while deleting 1
     }
   }
-
     return 'That item is not in your cart.'
 
 }
