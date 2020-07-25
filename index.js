@@ -30,7 +30,7 @@ function viewCart() {
      for(let i = 1; i < cart.length - 1;i++){
       say = `${say}, ${cart[i].itemName} at $${cart[i].itemPrice}`
       }
-      return `${say}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+      return `${say}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
 
 
 
